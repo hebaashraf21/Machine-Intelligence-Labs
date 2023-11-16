@@ -1,0 +1,5 @@
+{
+    "description": "Test Case 4",
+    "input_args": ["read_text_file('data/text3_ciphered.txt')", "read_word_list('data/english.txt')"],
+    "comparison_args": ["'data/text3_original.txt'", "13", "10", "'logs/test4_deciphered.txt'"]
+}

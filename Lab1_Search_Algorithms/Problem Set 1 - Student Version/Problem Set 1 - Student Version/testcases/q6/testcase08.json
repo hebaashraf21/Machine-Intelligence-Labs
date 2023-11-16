@@ -1,0 +1,14 @@
+{
+    "description": "Level 2 (h=0)",
+    "function": "test_tools.run_informed_search_for_sokoban",
+    "comparator": "test_tools.compare_search_results_for_sokoban",
+    "input_args": [
+        "'search.BestFirstSearch'",
+        "SokobanProblem.from_file('levels/level2.txt')",
+        "lambda *_: 0"
+    ],
+    "comparison_args": [
+        "[('RDLLLDLURRRRDDLURULLLDLLURRRRLLUULDLDRRR', 6504), ('RDLLLULDRRRRDDLURULLLULLDRRRRLLDDLULURRR', 6477)]",
+        "'levels/level2.txt'"
+    ]
+}

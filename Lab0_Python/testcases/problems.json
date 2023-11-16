@@ -1,0 +1,37 @@
+{
+    "name": "Problem Set 0: Introduction to Python",
+    "problems": [
+        {
+            "name": "Palindromes",
+            "testcases_path": "q1",
+            "function": "load_function('palindrome_check.palindrome_check')",
+            "timeout": 1
+        },
+        {
+            "name": "Histogram",
+            "testcases_path": "q2",
+            "function": "load_function('histogram.histogram')",
+            "timeout": 1
+        },
+        {
+            "name": "GPA Calculator",
+            "testcases_path": "q3",
+            "function": "load_function('gpa_calculator.calculate_gpa')",
+            "comparator": "approximate_comparator",
+            "timeout": 1
+        },
+        {
+            "name": "Locator",
+            "testcases_path": "q4",
+            "function": "load_function('locator.locate')",
+            "timeout": 1
+        },
+        {
+            "name": "Caesar Decipher",
+            "testcases_path": "q5",
+            "function": "load_function('caesar.caesar_dechiper')",
+            "comparator": "compare_decipher",
+            "timeout": 1
+        }
+    ]
+}

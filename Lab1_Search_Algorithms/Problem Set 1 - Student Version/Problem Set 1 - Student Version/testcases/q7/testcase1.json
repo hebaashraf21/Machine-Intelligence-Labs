@@ -1,0 +1,14 @@
+{
+    "description": "Level 2",
+    "input_args": [
+        "'search.AStarSearch'",
+        "SokobanProblem.from_file('levels/level2.txt')"
+    ],
+    "comparison_args": [
+        "40",
+        "[6000]",
+        "'levels/level2.txt'"
+    ],
+    "maximum_grade": 1,
+    "timeout": 6
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Level 2 (h=manhattan distance to nearest crate)",
+    "function": "test_tools.run_informed_search_for_sokoban",
+    "comparator": "test_tools.compare_search_results_for_sokoban",
+    "input_args": [
+        "'search.BestFirstSearch'",
+        "SokobanProblem.from_file('levels/level2.txt')",
+        "weak_heuristic"
+    ],
+    "comparison_args": [
+        "[('RDLLLDLURRRRDDLURULLLDLLURRRRLLUULDLDRRR', 2632), ('RDLLLULDRRRRDDLURULLLULLDRRRRLLDDLULURRR', 2481), ('RDLLLULDRRRRDDLURULLLULLDRRRRLLDDLULURRR', 2632), ('RDLLLDLURRRRDDLURULLLDLLURRRRLLUULDLDRRR', 2480)]",
+        "'levels/level2.txt'"
+    ]
+}

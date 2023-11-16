@@ -1,0 +1,14 @@
+{
+    "description": "Level 1 (h=0)",
+    "function": "test_tools.run_informed_search_for_sokoban",
+    "comparator": "test_tools.compare_search_results_for_sokoban",
+    "input_args": [
+        "'search.AStarSearch'",
+        "SokobanProblem.from_file('levels/level1.txt')",
+        "lambda *_: 0"
+    ],
+    "comparison_args": [
+        "[('RDDDLURULLLULLDRRRR', 307)]",
+        "'levels/level1.txt'"
+    ]
+}
