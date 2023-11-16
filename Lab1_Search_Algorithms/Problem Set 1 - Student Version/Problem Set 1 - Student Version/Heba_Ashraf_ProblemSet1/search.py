@@ -197,6 +197,7 @@ def UniformCostSearch(problem: Problem[S, A], initial_state: S) -> Solution:
             # Evaluate the action cost
             action_cost = cost + problem.get_cost(node, action)
 
+            # Generate the child node resulting from the action
             child_node = problem.get_successor(node, action)
 
             # Check if the child node is not in the frontier and also not in the explored set
@@ -231,6 +232,8 @@ def AStarSearch(problem: Problem[S, A], initial_state: S, heuristic: HeuristicFu
     while frontier:
         # Get the node with the highest priority (lowest total cost)
         node = min(frontier, key=lambda k: frontier[k][0])
+
+        # Retrieve the total cost and actions for the current node from the frontier
         total_cost, actions = frontier.pop(node)
 
         # If the node is the goal state, return the path
@@ -242,7 +245,11 @@ def AStarSearch(problem: Problem[S, A], initial_state: S, heuristic: HeuristicFu
 
         # Loop over all the possible actions of the current state
         for action in problem.get_actions(node):
+
+            # Generate the child node resulting from the action
             child_node = problem.get_successor(node, action)
+
+             # Get the cost associated with the current action
             action_cost = problem.get_cost(node, action)
 
             # Check if the child_node is in the frontier
@@ -250,8 +257,14 @@ def AStarSearch(problem: Problem[S, A], initial_state: S, heuristic: HeuristicFu
 
             # If the child_node is neither in the frontier nor explored, or it's in the frontier with a higher cost
             if child_node not in explored and not in_frontier:
+
+                # Create a new path by extending the current actions with the current action
                 new_path = actions + [action]
+
+                # Calculate the new total cost for the child node, considering the heuristic estimate
+                # Subtract the heuristic estimate for the current node (node) and add the heuristic estimate for the child node (child_node)
                 new_total_cost = total_cost - heuristic(problem, node) + action_cost + heuristic(problem, child_node)
+                # Update the frontier with the new total cost and path for the child node
                 frontier[child_node] = (new_total_cost, new_path)
             elif in_frontier:
                 # Check if the new path is better (lower cost)
@@ -298,10 +311,16 @@ def BestFirstSearch(problem: Problem[S, A], initial_state: S, heuristic: Heurist
 
         # Loop over all the possible actions of the current state
         for action in problem.get_actions(node):
+            # Generate the child node resulting from the action
             child_node = problem.get_successor(node, action)
-
+            
+            # Check if the child_node is neither in the frontier nor explored
             if child_node not in frontier and child_node not in explored:
+
+                # Create a new path by extending the current actions with the current action
                 new_path = actions + [action]
+
+                # Add the child_node to the frontier with its heuristic value and the new path
                 frontier[child_node] = (heuristic(problem, child_node), new_path)
 
     # Return None if no solution is found
