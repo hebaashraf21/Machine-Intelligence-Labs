@@ -1,0 +1,13 @@
+{
+    "description": "One Action",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(5, 5)",
+        "trajectory": "[Direction.NONE]"
+    },
+    "comparison_args": [
+        "((Point(1,2),), Direction.LEFT, Point(4, 3))",
+        "[0]",
+        "False",
+        "[Direction.NONE, Direction.DOWN, Direction.UP]"
+    ]
+}

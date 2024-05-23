@@ -1,0 +1,49 @@
+{
+    "name": "Problem Set 2: CSP and Games",
+    "problems": [
+        {
+            "name": "Forward Checking",
+            "testcases_path": "q1",
+            "timeout": 1
+        },
+        {
+            "name": "Least Restricting Value",
+            "testcases_path": "q2",
+            "timeout": 1
+        },
+        {
+            "name": "Backtracking Search",
+            "testcases_path": "q3",
+            "timeout": 1
+        },
+        {
+            "name": "Cryptarithmetic Puzzles",
+            "testcases_path": "q4",
+            "timeout": 1
+        },
+        {
+            "name": "Minimax",
+            "testcases_path": "q5",
+            "timeout": 1,
+            "weight": 0.5
+        },
+        {
+            "name": "Alpha Beta Pruning",
+            "testcases_path": "q6",
+            "timeout": 1,
+            "weight": 0.5
+        },
+        {
+            "name": "Alpha Beta Pruning with Move Ordering",
+            "testcases_path": "q7",
+            "timeout": 1,
+            "weight": 0.5
+        },
+        {
+            "name": "Expectimax",
+            "testcases_path": "q8",
+            "timeout": 1,
+            "weight": 0.5
+        }
+    ]
+}

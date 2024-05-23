@@ -1,0 +1,13 @@
+{
+    "description": "Going Down",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(5, 5)",
+        "trajectory": "[Direction.NONE, Direction.DOWN]"
+    },
+    "comparison_args": [
+        "((Point(1,3),), Direction.DOWN, Point(4, 3))",
+        "[0, 0]",
+        "False",
+        "[Direction.NONE, Direction.RIGHT, Direction.LEFT]"
+    ]
+}

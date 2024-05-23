@@ -1,0 +1,13 @@
+{
+    "description": "Ate 1 apple",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(5, 5)",
+        "trajectory": "[Direction.DOWN, Direction.RIGHT, Direction.NONE]"
+    },
+    "comparison_args": [
+        "((Point(4,3), Point(3,3)), Direction.RIGHT, Point(0,0))",
+        "[0, 0, 1]",
+        "False",
+        "[Direction.NONE, Direction.DOWN, Direction.UP]"
+    ]
+}

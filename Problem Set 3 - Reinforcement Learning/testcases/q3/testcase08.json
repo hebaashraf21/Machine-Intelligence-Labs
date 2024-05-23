@@ -1,0 +1,13 @@
+{
+    "description": "Going Up",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(5, 5)",
+        "trajectory": "[Direction.NONE, Direction.UP]"
+    },
+    "comparison_args": [
+        "((Point(1,1),), Direction.UP, Point(4, 3))",
+        "[0, 0]",
+        "False",
+        "[Direction.NONE, Direction.RIGHT, Direction.LEFT]"
+    ]
+}

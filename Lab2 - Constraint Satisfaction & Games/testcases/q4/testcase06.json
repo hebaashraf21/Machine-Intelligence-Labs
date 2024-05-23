@@ -1,0 +1,10 @@
+{
+    "description": "Puzzle 6",
+    "function": "test_tools.run_csp_solve_cryptarithmetic",
+    "comparator": "test_tools.compare_cryptarithmetic_solution",
+    "input_args": [
+        "'cryptarithmetic.CryptArithmeticProblem'",
+        "'puzzles/puzzle_6.txt'"
+    ],
+    "comparison_args": []
+}

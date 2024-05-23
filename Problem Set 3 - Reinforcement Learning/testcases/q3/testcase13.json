@@ -1,0 +1,13 @@
+{
+    "description": "WINNER",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(2, 2)",
+        "trajectory": "[Direction.NONE, Direction.UP, Direction.RIGHT, Direction.DOWN]"
+    },
+    "comparison_args": [
+        "None",
+        "[1, 0, 1, 101]",
+        "True",
+        "None"
+    ]
+}

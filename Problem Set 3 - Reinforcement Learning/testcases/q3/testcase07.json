@@ -1,0 +1,13 @@
+{
+    "description": "The Snake is DEAD",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(5, 5)",
+        "trajectory": "[Direction.DOWN, Direction.RIGHT, Direction.NONE, Direction.NONE, Direction.UP, Direction.NONE, Direction.NONE, Direction.RIGHT, Direction.NONE, Direction.DOWN, Direction.RIGHT, Direction.UP, Direction.LEFT]"
+    },
+    "comparison_args": [
+        "None",
+        "[0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, -100]",
+        "True",
+        "None"
+    ]
+}

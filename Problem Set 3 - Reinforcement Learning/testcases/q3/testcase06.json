@@ -1,0 +1,13 @@
+{
+    "description": "Wrapped around and ate 4 apples",
+    "input_kwargs": {
+        "env": "load_function('snake.SnakeEnv')(5, 5)",
+        "trajectory": "[Direction.DOWN, Direction.RIGHT, Direction.NONE, Direction.NONE, Direction.UP, Direction.NONE, Direction.NONE, Direction.RIGHT, Direction.NONE, Direction.DOWN, Direction.RIGHT]"
+    },
+    "comparison_args": [
+        "((Point(3,1), Point(2,1), Point(2,0), Point(1,0), Point(0,0)), Direction.RIGHT, Point(0,1))",
+        "[0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1]",
+        "False",
+        "[Direction.NONE, Direction.DOWN, Direction.UP]"
+    ]
+}
